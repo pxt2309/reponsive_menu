@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#menu {
+    overflow: hidden;
+    background-color: orange;
+}
+
+.menu__items {
+    float: left;
+    list-style: none;
+}
+
+.menu__items-link {
+    display: block;
+    padding: 10px 25px;
+    color: #fff;
+    border-right: 1px solid red;
+    text-decoration: none;    
+}
+
+.menu__items-link:hover {
+    background-color: red;
+    color: #333;
+}
+
+@media (width <= 768px) {
+    .menu__items {
+        float: none;
+    }
+    .menu__items-link {
+        border-bottom: 1px solid red; 
+    }
+}
